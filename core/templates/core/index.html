@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<time></time>
+</head>
+<body>
+	<h1>Sentiment Analysis of Movie Reviews</h1>
+	<form method="POST">
+		{%csrf_token%}
+		<label>Select the movie </label>
+  		<select name="movie">
+		    <option value="Max Steel">Max Steel</option>
+		    <option value="Inferno">Inferno</option>
+		    <option value="The Girl on the Train">The Girl on the Train</option>
+		    <option value="American Pastoral">American Pastoral</option>
+		    <option value="The Unspoken">The Unspoken</option>
+  		</select><br><br>
+
+		<button type="submit">Submit</button>
+	</form>
+
+	<p>You want to analyse the reviews of {{movie}}</p><br>
+</body>
+</html>
